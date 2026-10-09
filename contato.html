@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SorrisoConecta: protótipo acadêmico de captação e relacionamento para a Turma do Bem.">
+    <title>Contato | SorrisoConecta</title>
+    <link rel="icon" href="imagens/simbolo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <!-- O cabeçalho mantém a mesma navegação em todas as páginas. -->
+    <header>
+        <div class="container cabecalho">
+            <a class="marca" href="index.html"><img src="imagens/simbolo.svg" alt="">SorrisoConecta</a>
+            <nav aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="campanhas.html">Campanhas</a>
+                <a href="radar.html">Radar</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="integrantes.html">Equipe</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main id="conteudo">
+        <section class="container"><p class="eyebrow">Vamos conversar</p><h1>Qual é o seu jeito de apoiar?</h1><p class="lead">Uma conversa começa com informação clara sobre seu interesse e sua disponibilidade.</p>
+            <div class="grid-dois"><article class="card"><h2>Registre seu interesse</h2><p id="form-aviso" class="aviso">Formulário demonstrativo. Use dados fictícios. Nenhuma informação será enviada ou salva.</p>
+                <form action="contato.html#retorno" method="get" aria-describedby="form-aviso">
+                    <div><label for="nome">Nome ou razão social</label><input id="nome" name="nome" type="text" placeholder="Ex.: Papelaria Ponte" maxlength="100" required></div>
+                    <div><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="nome@example.com" maxlength="100" required></div>
+                    <div><label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text" placeholder="Ex.: São Paulo" maxlength="80" required></div>
+                    <div><label for="programa">Programa de interesse</label><select id="programa" name="programa" required><option value="">Selecione</option><option>Dentista do Bem</option><option>Apolônias do Bem</option></select></div>
+                    <div><label for="apoio">Forma de apoio</label><select id="apoio" name="apoio" required><option value="">Selecione</option><option>Dinheiro</option><option>Materiais</option><option>Divulgação</option></select></div>
+                    <div><label for="mensagem">Como você gostaria de contribuir?</label><textarea id="mensagem" name="mensagem" placeholder="Conte sua disponibilidade usando um exemplo fictício." maxlength="600" required></textarea></div>
+                    <div class="checkbox"><input id="autorizacao" name="autorizacao" type="checkbox" value="sim" required><label for="autorizacao">Neste exemplo, autorizo contato sobre campanhas do programa escolhido.</label></div>
+                    <button class="botao" type="submit">Demonstrar envio</button>
+                </form>
+            </article><aside class="card"><h2>O que acontece depois?</h2><ol><li>A equipe recebe o interesse em uma futura versão integrada.</li><li>Verifica uma campanha compatível.</li><li>Combina os próximos passos pelo canal autorizado.</li><li>Registra o contato para manter o acompanhamento.</li></ol><h2>Contato do projeto</h2><p>Autor: Henrique dos Santos Ramalho.<br>RM 575759 · Turma 1TDSPA.</p><p><a href="https://github.com/henriqueramalho299" target="_blank" rel="noopener noreferrer">Perfil GitHub do autor</a></p><p id="retorno" class="aviso">Esta página não possui serviço de envio. O botão apenas demonstra a validação do navegador e retorna para esta explicação. Nada foi enviado à Turma do Bem.</p></aside></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container rodape">
+            <div><p><strong>SorrisoConecta</strong></p><p>Cada apoio encontra um caminho para fazer o bem.</p></div>
+            <div><p>Henrique dos Santos Ramalho · RM 575759 · 1TDSPA</p><p>Projeto acadêmico FIAP · Sprint 1 · 2026</p><p>Proposta para a Turma do Bem. Sem vínculo oficial.</p></div>
+        </div>
+    </footer>
+</body>
+</html>
