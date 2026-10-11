@@ -1,4 +1,4 @@
-﻿# SorrisoConecta
+# SorrisoConecta
 
 **Cada apoio encontra um caminho para fazer o bem.**
 
@@ -10,7 +10,7 @@ HTML5 e CSS3 escritos para este projeto. Não há JavaScript, frameworks, fontes
 
 ## Como abrir
 
-Extraia a pasta e abra `index.html` no navegador. Os links são relativos e funcionam sem instalação. Use uma janela desktop com largura de 992 pixels ou mais. O CSS tem ajustes para 992px e 1300px. Mobile será tratado em uma etapa futura.
+Extraia a pasta e abra `index.html` no navegador. Os links são relativos e funcionam sem instalação. Use uma janela desktop com largura de 992 pixels ou mais. O CSS tem ajustes para 992px e 1300px. A versão inclui adaptações simples para telas menores; a avaliação desta sprint é desktop.
 
 ## Páginas
 
@@ -22,7 +22,7 @@ Extraia a pasta e abra `index.html` no navegador. Os links são relativos e func
 - `campanhas.html`: três campanhas fictícias e modalidades de apoio.
 - `radar.html`: classificação explicável e próxima ação da equipe.
 - `css/style.css`: identidade e componentes compartilhados.
-- `imagens/`: símbolo, rede de apoio e imagem provisória de perfil.
+- `imagens/`: símbolo, rede de apoio e foto real do integrante.
 
 ## Autor
 
@@ -32,7 +32,7 @@ GitHub: https://github.com/henriqueramalho299
 
 LinkedIn: https://www.linkedin.com/in/henrique-ramalho-aa54752b0/
 
-Foto: imagens/henrique.png
+Foto: `imagens/henrique.png`.
 
 ![Henrique dos Santos Ramalho](imagens/henrique.png)
 
@@ -60,7 +60,13 @@ Contato do autor pelo perfil GitHub informado acima. O formulário `contato.html
 
 O site não coleta dinheiro, não seleciona beneficiários e não automatiza contato nesta sprint. Os exemplos do radar são consistentes com os dados iniciais do Python. A autorização para contato é uma regra do protótipo e não representa uma certificação de conformidade legal.
 
-Foi feita verificação estrutural dos HTMLs, dos links locais e dos arquivos CSS e SVG. A inspeção visual no navegador e a publicação devem ser concluídas pelo autor antes da entrega. Foto e LinkedIn incluídos.
+Foi feita verificação estrutural dos HTMLs, dos links locais e dos arquivos CSS e SVG. O autor conferiu e publicou a versão anterior. O novo visual precisa ser conferido no navegador após substituir os arquivos e antes da entrega. Foto e LinkedIn já foram incluídos.
 
 Crédito do contexto: enunciado FIAP, “1TDS Agosto - TDB - Sprint 1 e 2_v3”. Implementação e ilustrações preparadas com apoio de IA, para revisão e compreensão pelo aluno.
 
+
+## Direção visual
+
+Redesenho com fundo escuro, detalhes coral, tipografia ampla e rede de apoio animada em CSS. A referência de composição foi https://www.cognichip.ai/, com ilustração e conteúdo próprios do SorrisoConecta. Não foram usados código ou imagens da referência.
+
+As transições, rolagem suave e movimentos decorativos usam apenas CSS. A preferência de movimento reduzido desativa os efeitos. Nenhum JavaScript foi incluído.
