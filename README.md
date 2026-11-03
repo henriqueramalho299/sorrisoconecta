@@ -42,7 +42,7 @@ O cabeçalho e o rodapé mantêm o mesmo padrão visual nas páginas. A navegaç
 
 **Navegação:** menu principal no cabeçalho, presente nas sete páginas, com links relativos para as áreas institucionais e demonstrativas.
 
-**Identidade visual:** base clara com painéis verde-escuros, acentos coral e tipografia editorial sem serifa. Componentes e navegação consistentes entre as sete páginas. A identidade utiliza CSS próprio, sem bibliotecas externas.
+**Identidade visual:** fundo grafite com painéis verde-escuros, acentos coral e tipografia editorial sem serifa. Componentes e navegação consistentes entre as sete páginas. A identidade utiliza CSS próprio, sem bibliotecas externas.
 
 **Funcionalidades demonstradas:** campanhas fictícias e visualização ilustrativa de critérios para priorização de contato. Não há funcionalidade dinâmica nesta etapa.
 
@@ -58,7 +58,11 @@ Repositório do projeto: https://github.com/henriqueramalho299/sorrisoconecta
 
 Visualização pública: https://henriqueramalho299.github.io/sorrisoconecta/
 
-A versão disponibilizada neste arquivo é uma edição visual local do protótipo acadêmico. O repositório público mantém o histórico de desenvolvimento do projeto.
+A versão Dark Premium do protótipo acadêmico está publicada no GitHub Pages. O repositório público mantém o histórico de desenvolvimento do projeto.
+
+## Pitch de apresentação — Sprint 1
+
+Vídeo de apresentação do projeto, gravado pelo autor e compartilhado no YouTube: https://youtu.be/68RVOxgvufc
 
 ## Créditos
 
