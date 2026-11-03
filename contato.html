@@ -1,67 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário demonstrativo do SorrisoConecta para registrar interesse em apoiar uma campanha. Nenhum dado é enviado.">
-    <title>Contato | SorrisoConecta</title>
-    <link rel="icon" href="imagens/simbolo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Formulário demonstrativo do SorrisoConecta para registrar interesse em apoiar uma campanha. Nenhum dado é enviado." name="description"/>
+<title>Contato | SorrisoConecta</title>
+<link href="imagens/simbolo.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/site.js"></script>
 </head>
-<body class="pagina-contato">
-    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-        <div class="anuncio">Projeto acadêmico FIAP <span aria-hidden="true">·</span> Tecnologia a serviço do impacto social</div>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<!-- O cabeçalho mantém a mesma navegação em todas as páginas. -->
+<div class="anuncio">Cada apoio encontra um caminho para fazer o bem</div>
 <header>
-        <div class="container cabecalho">
-            <a class="marca" href="index.html"><img src="imagens/simbolo.svg" alt="">sorriso<span class="marca-destaque">conecta.</span></a>
-            <nav id="menu-principal" aria-label="Menu principal">
-                <a href="index.html">Início</a>
-                <a href="campanhas.html">Campanhas</a>
-                <a href="radar.html">Radar</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="integrantes.html">Equipe</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contato.html" aria-current="page" class="nav-contato">Contato</a>
-            </nav>
-        </div>
-    </header>
-    <main id="conteudo">
-        <section class="container"><p class="eyebrow">Vamos conversar</p>
+<div class="container cabecalho">
+<a class="marca" href="index.html"><img alt="" src="imagens/simbolo.svg"/>sorriso<span class="marca-destaque">conecta.</span></a>
+<button aria-controls="menu-principal" aria-expanded="false" class="menu-botao" type="button">Menu <span aria-hidden="true">☰</span></button>
+<nav aria-label="Menu principal" id="menu-principal">
+<a href="index.html">Início</a>
+<a href="campanhas.html">Campanhas</a>
+<a href="radar.html">Radar</a>
+<a href="sobre.html">Sobre</a>
+<a href="integrantes.html">Equipe</a>
+<a href="faq.html">FAQ</a>
+<a aria-current="page" class="nav-contato" href="contato.html">Contato</a>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section class="container"><p class="eyebrow">Vamos conversar</p>
 <h1>Toda conexão começa com uma conversa.</h1>
-<p class="lead">Informe a forma de apoio e o programa de seu interesse para conhecer o modelo do cadastro.</p>
-            <div class="grid-dois">
+<p class="lead">Informe a forma de apoio e o programa de seu interesse para testar o cadastro.</p>
+<div class="grid-dois">
 <article class="card"><h2>Registre seu interesse</h2>
-<p id="form-aviso" class="aviso">Formulário demonstrativo. Use dados fictícios. Nenhuma informação será enviada ou salva.</p>
-                <form id="form-contato" aria-describedby="form-aviso">
-                    <div>
-<label for="nome">Nome ou razão social</label><input id="nome" name="nome" type="text" placeholder="Ex.: Papelaria Ponte" maxlength="100">
+<p class="aviso" id="form-aviso">Formulário demonstrativo. Use dados fictícios. Nenhuma informação será enviada ou salva.</p>
+<form aria-describedby="form-aviso" id="form-contato" novalidate="">
+<div>
+<label for="nome">Nome ou razão social</label><input id="nome" maxlength="100" name="nome" placeholder="Ex.: Papelaria Ponte" type="text"/>
 </div>
-                    <div>
-<label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="nome@example.com" maxlength="100">
+<div>
+<label for="email">E-mail</label><input autocomplete="email" id="email" maxlength="100" name="email" placeholder="nome@example.com" type="email"/>
 </div>
-                    <div>
-<label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text" autocomplete="address-level2" placeholder="Ex.: São Paulo" maxlength="80">
+<div>
+<label for="cidade">Cidade</label><input autocomplete="address-level2" id="cidade" maxlength="80" name="cidade" placeholder="Ex.: São Paulo" type="text"/>
 </div>
-                    <div>
+<div>
 <label for="programa">Programa de interesse</label><select id="programa" name="programa"><option value="">Selecione</option>
 <option>Dentista do Bem</option>
 <option>Apolônias do Bem</option></select>
 </div>
-                    <div>
+<div>
 <label for="apoio">Forma de apoio</label><select id="apoio" name="apoio"><option value="">Selecione</option>
 <option>Dinheiro</option>
 <option>Materiais</option>
 <option>Divulgação</option></select>
 </div>
-                    <div>
-<label for="mensagem">Como você gostaria de contribuir?</label><textarea id="mensagem" name="mensagem" placeholder="Conte sua disponibilidade usando um exemplo fictício." maxlength="600"></textarea>
+<div>
+<label for="mensagem">Como você gostaria de contribuir?</label><textarea id="mensagem" maxlength="600" name="mensagem" placeholder="Conte sua disponibilidade usando um exemplo fictício."></textarea>
 </div>
-                    <div class="checkbox">
-<input id="autorizacao" name="autorizacao" type="checkbox" value="sim"><label for="autorizacao">Neste exemplo, autorizo contato sobre campanhas do programa escolhido.</label>
+<div class="checkbox">
+<input id="autorizacao" name="autorizacao" type="checkbox" value="sim"/><label for="autorizacao">Neste exemplo, autorizo contato sobre campanhas do programa escolhido.</label>
 </div>
-                    <button class="botao" type="button">Enviar (protótipo visual)</button>
-                </form>
-            </article><aside class="card"><h2>O que acontece depois?</h2>
+<button class="botao" type="submit">Demonstrar envio</button>
+</form>
+</article><aside class="card"><h2>O que acontece depois?</h2>
 <ol>
 <li>A equipe recebe o interesse em uma futura versão integrada.</li>
 <li>Verifica uma campanha compatível.</li>
@@ -69,24 +73,24 @@
 <li>Registra o contato para manter o acompanhamento.</li>
 </ol>
 <h2>Contato do projeto</h2>
-<p>Autor: Henrique dos Santos Ramalho.<br>RM 575759 · Turma 1TDSPA.</p>
-<p><a href="https://github.com/henriqueramalho299" target="_blank" rel="noopener noreferrer">Perfil GitHub do autor</a></p>
-<p id="retorno" class="aviso" role="status" aria-live="polite">Esta página não possui serviço de envio. Esta etapa apresenta apenas a estrutura visual do formulário, sem envio ou validação dinâmica.</p></aside>
+<p>Autor: Henrique dos Santos Ramalho.<br/>RM 575759 · Turma 1TDSPA.</p>
+<p><a href="https://github.com/henriqueramalho299" rel="noopener noreferrer" target="_blank">Perfil GitHub do autor</a></p>
+<p aria-live="polite" class="aviso" id="retorno" role="status">Esta página não possui serviço de envio. A validação é feita no navegador. Nada será enviado à Turma do Bem.</p></aside>
 </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container rodape">
-            <div>
+</section>
+</main>
+<footer>
+<div class="container rodape">
+<div>
 <p><strong>SorrisoConecta</strong></p>
 <p>Conexões que viram sorrisos.</p>
 </div>
-            <div>
+<div>
 <p>Henrique dos Santos Ramalho · RM 575759 · 1TDSPA</p>
-<p>Projeto acadêmico FIAP · Sprint 1 · 2026</p>
+<p>Projeto acadêmico FIAP · Sprint 2 · 2026</p>
 <p>Proposta para a Turma do Bem. Sem vínculo oficial.</p>
 </div>
-        </div>
-    </footer>
+</div>
+</footer>
 </body>
 </html>

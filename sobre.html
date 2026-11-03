@@ -1,79 +1,83 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Problema, proposta e roadmap do SorrisoConecta, protótipo acadêmico de captação para a Turma do Bem.">
-    <title>Sobre | SorrisoConecta</title>
-    <link rel="icon" href="imagens/simbolo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Problema, proposta e roadmap do SorrisoConecta, protótipo acadêmico de captação para a Turma do Bem." name="description"/>
+<title>Sobre | SorrisoConecta</title>
+<link href="imagens/simbolo.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/site.js"></script>
 </head>
-<body class="pagina-sobre">
-    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-        <div class="anuncio">Projeto acadêmico FIAP <span aria-hidden="true">·</span> Tecnologia a serviço do impacto social</div>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<!-- O cabeçalho mantém a mesma navegação em todas as páginas. -->
+<div class="anuncio">Cada apoio encontra um caminho para fazer o bem</div>
 <header>
-        <div class="container cabecalho">
-            <a class="marca" href="index.html"><img src="imagens/simbolo.svg" alt="">sorriso<span class="marca-destaque">conecta.</span></a>
-            <nav id="menu-principal" aria-label="Menu principal">
-                <a href="index.html">Início</a>
-                <a href="campanhas.html">Campanhas</a>
-                <a href="radar.html">Radar</a>
-                <a href="sobre.html" aria-current="page">Sobre</a>
-                <a href="integrantes.html">Equipe</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contato.html" class="nav-contato">Contato</a>
-            </nav>
-        </div>
-    </header>
-    <main id="conteudo">
-        <section class="container">
-            <div class="secao-titulo">
+<div class="container cabecalho">
+<a class="marca" href="index.html"><img alt="" src="imagens/simbolo.svg"/>sorriso<span class="marca-destaque">conecta.</span></a>
+<button aria-controls="menu-principal" aria-expanded="false" class="menu-botao" type="button">Menu <span aria-hidden="true">☰</span></button>
+<nav aria-label="Menu principal" id="menu-principal">
+<a href="index.html">Início</a>
+<a href="campanhas.html">Campanhas</a>
+<a href="radar.html">Radar</a>
+<a aria-current="page" href="sobre.html">Sobre</a>
+<a href="integrantes.html">Equipe</a>
+<a href="faq.html">FAQ</a>
+<a class="nav-contato" href="contato.html">Contato</a>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section class="container">
+<div class="secao-titulo">
 <p class="eyebrow">Sobre a solução</p>
 <h1>Apoiar é só o começo. Conectar faz continuar.</h1>
 <p class="lead">O SorrisoConecta é uma proposta acadêmica para organizar a captação da Turma do Bem, conectando apoios locais às necessidades das campanhas.</p>
 </div>
-            <div class="grid-dois">
-                <article class="card"><h2>O problema que queremos resolver</h2>
+<div class="grid-dois">
+<article class="card"><h2>O problema que queremos resolver</h2>
 <p>Quando cadastros, interesses e conversas ficam separados, torna-se mais difícil identificar oportunidades de apoio e decidir o próximo contato. O projeto propõe reunir essas informações em um fluxo compreensível.</p>
 <p>Essa é uma hipótese de solução baseada no desafio apresentado, que deverá ser validada com a organização.</p></article>
-                <article class="card"><h2>Nosso diferencial</h2>
+<article class="card"><h2>Nosso diferencial</h2>
 <p>O Radar de Apoio apresenta uma prioridade explicável: considera interesse, compatibilidade com a campanha e tempo sem contato. A decisão continua com a equipe.</p>
 <p>A proposta inclui dinheiro, materiais e divulgação, sem transformar apoios não financeiros em valores fictícios.</p></article>
-            </div>
-        </section>
-        <section class="container">
-            <h2>O que existe nesta sprint</h2>
-<p>Nesta primeira sprint, o site apresenta um protótipo estático desenvolvido em HTML5 e CSS3. O Radar de Apoio mostra exemplos ilustrativos de prioridade, sem cálculos dinâmicos. As integrações entre módulos ficam para as etapas seguintes.</p>
+</div>
+</section>
+<section class="container">
+<h2>O que existe nesta sprint</h2>
+<p>Este protótipo usa HTML5, CSS3 e JavaScript. O radar calcula prioridades no navegador; Python e Java demonstram as mesmas regras em programas independentes. A integração entre os módulos ainda não utiliza uma base compartilhada.</p>
 <p>Cadastro real, envio de mensagens, pagamentos, integração com banco e chatbot em produção são evoluções planejadas.</p>
-            <h2>Roadmap proposto</h2>
-            <div class="etapas">
-                <article><p class="eyebrow">Sprint 1</p>
+<h2>Roadmap proposto</h2>
+<div class="etapas">
+<article><p class="eyebrow">Sprint 1</p>
 <h3>Definir e demonstrar</h3>
 <p>Interface desktop, regras, Python inicial e modelagens.</p></article>
-                <article><p class="eyebrow">Sprint 2</p>
+<article><p class="eyebrow">Sprint 2</p>
 <h3>Ampliar a interação</h3>
 <p>Responsividade, JavaScript, classes Java e evolução dos modelos.</p></article>
-                <article><p class="eyebrow">Sprint 3</p>
+<article><p class="eyebrow">Sprint 3</p>
 <h3>Conectar os módulos</h3>
 <p>Planejamento de persistência e integração, conforme novos requisitos.</p></article>
-                <article><p class="eyebrow">Sprint 4</p>
+<article><p class="eyebrow">Sprint 4</p>
 <h3>Validar e aprimorar</h3>
 <p>Testes integrados, indicadores e apresentação final.</p></article>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container rodape">
-            <div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container rodape">
+<div>
 <p><strong>SorrisoConecta</strong></p>
 <p>Conexões que viram sorrisos.</p>
 </div>
-            <div>
+<div>
 <p>Henrique dos Santos Ramalho · RM 575759 · 1TDSPA</p>
-<p>Projeto acadêmico FIAP · Sprint 1 · 2026</p>
+<p>Projeto acadêmico FIAP · Sprint 2 · 2026</p>
 <p>Proposta para a Turma do Bem. Sem vínculo oficial.</p>
 </div>
-        </div>
-    </footer>
+</div>
+</footer>
 </body>
 </html>

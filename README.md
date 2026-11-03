@@ -1,73 +1,80 @@
-# SorrisoConecta — Sprint 1 | Front-end Design Engineering
+# SorrisoConecta
 
-Projeto acadêmico do Challenge Turma do Bem, FIAP, turma 1TDSPA.
+**Cada apoio encontra um caminho para fazer o bem.**
 
-**Autor:** Henrique dos Santos Ramalho — **RM:** 575759 — **Turma:** 1TDSPA.
+Protótipo acadêmico do Challenge Turma do Bem, FIAP, Sprint 2. O projeto organiza apoiadores, campanhas locais e o histórico de relacionamento. O Radar de Apoio demonstra uma prioridade explicável com interesse, compatibilidade e tempo sem contato.
 
-**LinkedIn:** https://www.linkedin.com/in/henrique-ramalho-aa54752b0/
+## Tecnologias
 
-![Foto do autor](imagens/henrique.jpg)
+HTML5, CSS3 e JavaScript próprios. Não há frameworks, fontes remotas, bibliotecas externas ou conexão com servidor. Os SVGs foram desenhados para a proposta. Fonte de sistema: Arial/sans-serif.
 
-![Símbolo do projeto](imagens/simbolo.svg)
+## Como abrir
 
-![Ilustração da rede de apoio](imagens/rede-apoio.svg)
+Extraia a pasta e abra `index.html` no navegador. Os links são relativos e funcionam sem instalação. O layout se adapta a celular, tablet e desktop. O menu compacto aparece até 991px. As demais media queries ajustam grades, textos e espaçamentos.
 
-## Apresentação e proposta
+## Páginas
 
-O SorrisoConecta é uma proposta de plataforma para apoiar a organização de campanhas, o relacionamento com apoiadores e a priorização transparente de oportunidades de contribuição. A solução foi concebida como exercício acadêmico, sem vínculo institucional com a Turma do Bem.
+- `index.html`: apresentação e caminho de apoio.
+- `integrantes.html`: identificação do integrante e responsabilidades.
+- `sobre.html`: problema, proposta, tecnologias e roadmap.
+- `faq.html`: dúvidas frequentes, usando details/summary do HTML.
+- `contato.html`: formulário demonstrativo com labels e validação própria em JavaScript.
+- `campanhas.html`: três campanhas fictícias e modalidades de apoio.
+- `radar.html`: classificação explicável e próxima ação da equipe.
+- `css/style.css`: identidade e componentes compartilhados.
+- `js/site.js`: menu responsivo, formulário, filtro de campanhas e radar interativo.
+- `imagens/`: símbolo, rede de apoio e foto real do integrante.
 
-## Tecnologias e escopo
+## Autor
 
-HTML5 semântico e CSS3 externo; nesta sprint, o protótipo é estático, em versão desktop. Não utiliza JavaScript, servidor, banco de dados ou integração com serviços externos. O formulário de contato é visual e não envia dados. Campanhas, contatos e valores demonstrativos são fictícios.
+Henrique dos Santos Ramalho · RM 575759 · 1TDSPA · FIAP.
 
-## Organização e páginas
+GitHub: https://github.com/henriqueramalho299
 
-- `index.html`: apresentação da proposta e acesso às seções.
-- `integrantes.html`: identificação, foto, RM, turma, responsabilidades e links do autor.
-- `sobre.html`: contexto, solução, tecnologias e roadmap.
-- `faq.html`: perguntas frequentes.
-- `contato.html`: estrutura do formulário e contato do projeto.
-- `campanhas.html`: exemplos de campanhas e modalidades de contribuição.
-- `radar.html`: exemplo estático de oportunidades e prioridades.
-- `css/style.css`: identidade visual, tipografia e componentes compartilhados.
-- `imagens/`: elementos visuais e foto do integrante.
+LinkedIn: https://www.linkedin.com/in/henrique-ramalho-aa54752b0/
 
-O cabeçalho e o rodapé mantêm o mesmo padrão visual nas páginas. A navegação utiliza links HTML locais. Abra `index.html` em um navegador desktop após extrair o ZIP.
+Foto: `imagens/henrique.jpg`.
 
-## Guia técnico e informativo
+![Henrique dos Santos Ramalho](imagens/henrique.jpg)
 
-**Público e objetivo:** projeto acadêmico voltado à gestão de relacionamento com doadores, parceiros e apoiadores de campanhas sociais.
+## Identidade e imagens
 
-**Arquitetura:** arquivos HTML na raiz do front-end, estilos em `/css` e recursos gráficos em `/imagens`; sem dependências externas.
+![Símbolo do SorrisoConecta](imagens/simbolo.svg)
 
-**Navegação:** menu principal no cabeçalho, presente nas sete páginas, com links relativos para as áreas institucionais e demonstrativas.
+![Rede de apoio](imagens/rede-apoio.svg)
 
-**Identidade visual:** fundo grafite com painéis verde-escuros, acentos coral e tipografia editorial sem serifa. Componentes e navegação consistentes entre as sete páginas. A identidade utiliza CSS próprio, sem bibliotecas externas.
+As imagens SVG são locais e não representam a marca oficial da Turma do Bem. Os nomes, números e campanhas da demonstração são fictícios.
 
-**Funcionalidades demonstradas:** campanhas fictícias e visualização ilustrativa de critérios para priorização de contato. Não há funcionalidade dinâmica nesta etapa.
+## Repositório e visualização pública
 
-**Limitações:** não há cadastro, armazenamento, autenticação, envio de mensagens ou pagamentos. Nenhum dado real deve ser fornecido no formulário.
+Repositório GitHub: https://github.com/henriqueramalho299/sorrisoconecta
 
-**Próximos passos:** responsividade, comportamentos em JavaScript e futuras integrações são previstos na evolução do projeto.
+GitHub Pages: https://henriqueramalho299.github.io/sorrisoconecta/
 
-## Repositório e visualização
+Pitch da Sprint 1: https://youtu.be/68RVOxgvufc
 
-GitHub do autor: https://github.com/henriqueramalho299
+Backlog e planejamento no Trello: https://trello.com/b/6kFLrs30/sorrisoconecta-backlog-e-sprints
 
-Repositório do projeto: https://github.com/henriqueramalho299/sorrisoconecta
+O repositório registra a evolução do SorrisoConecta. A publicação pública pode apresentar a versão consolidada mais recente disponível na branch principal.
 
-Visualização pública: https://henriqueramalho299.github.io/sorrisoconecta/
+## Contato
 
-A versão Dark Premium do protótipo acadêmico está publicada no GitHub Pages. O repositório público mantém o histórico de desenvolvimento do projeto.
+Contato do autor pelo perfil GitHub informado acima. O formulário `contato.html` é uma demonstração, não uma caixa de mensagens. A validação é feita em JavaScript, sem o atributo required. O evento de envio é bloqueado e os dados não são adicionados à URL. Não há envio ou armazenamento. Use somente exemplos fictícios.
 
-## Pitch de apresentação — Sprint 1
+## Escopo
 
-Vídeo de apresentação do projeto, gravado pelo autor e compartilhado no YouTube: https://youtu.be/68RVOxgvufc
+O site não coleta dinheiro, não seleciona beneficiários e não automatiza contato nesta sprint. Os exemplos do radar são consistentes com os dados iniciais do Python. A autorização para contato é uma regra do protótipo e não representa uma certificação de conformidade legal.
 
-## Créditos
 
-Conceito acadêmico elaborado para o Challenge da FIAP com base no desafio da Turma do Bem. Elementos visuais locais e conteúdo demonstrativo; dados de exemplo fictícios.
+Crédito do contexto: enunciado FIAP, “1TDS Agosto - TDB - Sprint 1 e 2_v3”. Implementação e ilustrações com apoio de IA.
 
-## Identidade visual
 
-A interface utiliza fundo grafite, cartões em verde profundo, detalhes coral e tipografia de alto contraste. Interações decorativas são feitas exclusivamente em CSS, sem JavaScript.
+## Direção visual
+
+Interface com fundo grafite, detalhes coral, tipografia ampla e painel de relacionamento com efeitos em CSS. Composição editorial de autoria do projeto, mantendo a identidade visual Dark Premium aprovada na Sprint 1; os elementos e o conteúdo são próprios do SorrisoConecta.
+
+As transições, rolagem suave e movimentos decorativos usam apenas CSS. A preferência de movimento reduzido desativa os efeitos. O JavaScript fica em arquivo externo e não usa bibliotecas.
+
+## Funcionalidades da Sprint 2
+
+Menu que abre e fecha com botão e Escape; validação por campo; filtro de campanhas; preenchimento de modalidade e programa ao escolher uma campanha; radar com busca, troca de campanha, recálculo após contato e restauração dos exemplos. As alterações do radar duram até recarregar a página.

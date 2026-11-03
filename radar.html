@@ -1,47 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Radar de Apoio: classificação explicável de apoiadores por interesse, compatibilidade e tempo sem contato.">
-    <title>Radar de Apoio | SorrisoConecta</title>
-    <link rel="icon" href="imagens/simbolo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Radar de Apoio: classificação explicável de apoiadores por interesse, compatibilidade e tempo sem contato." name="description"/>
+<title>Radar de Apoio | SorrisoConecta</title>
+<link href="imagens/simbolo.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/site.js"></script>
 </head>
-<body class="pagina-radar">
-    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-        <div class="anuncio">Projeto acadêmico FIAP <span aria-hidden="true">·</span> Tecnologia a serviço do impacto social</div>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<!-- O cabeçalho mantém a mesma navegação em todas as páginas. -->
+<div class="anuncio">Cada apoio encontra um caminho para fazer o bem</div>
 <header>
-        <div class="container cabecalho">
-            <a class="marca" href="index.html"><img src="imagens/simbolo.svg" alt="">sorriso<span class="marca-destaque">conecta.</span></a>
-            <nav id="menu-principal" aria-label="Menu principal">
-                <a href="index.html">Início</a>
-                <a href="campanhas.html">Campanhas</a>
-                <a href="radar.html" aria-current="page">Radar</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="integrantes.html">Equipe</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contato.html" class="nav-contato">Contato</a>
-            </nav>
-        </div>
-    </header>
-    <main id="conteudo">
-        <section class="container">
-            <div class="painel-topo">
+<div class="container cabecalho">
+<a class="marca" href="index.html"><img alt="" src="imagens/simbolo.svg"/>sorriso<span class="marca-destaque">conecta.</span></a>
+<button aria-controls="menu-principal" aria-expanded="false" class="menu-botao" type="button">Menu <span aria-hidden="true">☰</span></button>
+<nav aria-label="Menu principal" id="menu-principal">
+<a href="index.html">Início</a>
+<a href="campanhas.html">Campanhas</a>
+<a aria-current="page" href="radar.html">Radar</a>
+<a href="sobre.html">Sobre</a>
+<a href="integrantes.html">Equipe</a>
+<a href="faq.html">FAQ</a>
+<a class="nav-contato" href="contato.html">Contato</a>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section class="container">
+<div class="painel-topo">
 <div>
 <p class="eyebrow">Visão da equipe · demonstração</p>
 <h1>Radar de Apoio</h1>
 </div>
 <a class="botao botao-claro" href="campanhas.html">Ver campanhas</a>
 </div>
-            <p class="lead">Uma lista de contatos com contexto, motivo da prioridade e uma próxima ação sugerida.</p>
-            <p class="aviso">Demonstração com dados fictícios. Este é um exemplo estático de classificação. Nenhuma mensagem é enviada.</p>
-            <div class="indicadores"><article class="card"><span>Exemplos de apoiadores</span><strong>3</strong></article><article class="card"><span>Maior prioridade ilustrativa</span><strong>90</strong></article><article class="card"><span>Mensagens enviadas</span><strong>0</strong></article></div>
-            <h2 id="titulo-radar">Oportunidades de apoio</h2>
-            <div class="tabela-area"><table class="tabela"><caption>Exemplo estático de classificação para uma campanha fictícia</caption><thead><tr><th scope="col">Apoiador</th><th scope="col">Prioridade</th><th scope="col">Motivo</th><th scope="col">Próxima ação sugerida</th></tr></thead><tbody><tr><td>Instituto Aurora</td><td>90 · Prioritário</td><td>Interesse alto, compatibilidade com a campanha e contato antigo</td><td>Planejar novo contato</td></tr><tr><td>Comércio Sol</td><td>80 · Aproximação</td><td>Interesse médio e compatibilidade com a campanha</td><td>Apresentar formas de apoio</td></tr><tr><td>Ateliê Ponte</td><td>70 · Aproximação</td><td>Interesse em divulgação e histórico de contato</td><td>Confirmar disponibilidade</td></tr></tbody></table></div>
-            
-        </section>
-        <section class="container"><div class="grid-dois">
+<p class="lead">Uma lista de contatos com contexto, motivo da prioridade e uma próxima ação sugerida.</p>
+<p class="aviso">Demonstração com dados fictícios. As alterações duram até recarregar a página. Nenhuma mensagem é enviada.</p>
+<div class="filtros"><div><label for="campanha-radar">Campanha</label><select id="campanha-radar"><option value="1">Vozes do Bairro</option><option value="2">Rede de Materiais</option><option value="3">Recomeço em Rede</option></select></div><div><label for="busca-radar">Buscar apoiador</label><input id="busca-radar" placeholder="Nome do apoiador" type="search"/></div><button class="botao botao-claro" id="restaurar-radar" type="button">Restaurar exemplos</button></div>
+<div class="indicadores"><article class="card"><span>Compatíveis e autorizados</span><strong id="total-radar">0</strong></article><article class="card"><span>Prioritários na busca</span><strong id="prioritarios-radar">0</strong></article><article class="card"><span>Registros de contato nesta sessão</span><strong id="contatos-radar">0</strong></article></div>
+<h2 id="titulo-radar">Oportunidades de apoio</h2>
+<div class="tabela-area"><table class="tabela"><caption>Classificação recalculada conforme a campanha e o histórico</caption><thead><tr><th scope="col">Apoiador</th><th scope="col">Prioridade</th><th scope="col">Motivo</th><th scope="col">Ação de demonstração</th></tr></thead><tbody id="linhas-radar"></tbody></table></div>
+<p aria-live="polite" id="feedback-radar" role="status"></p>
+</section>
+<section class="container"><div class="grid-dois">
 <article class="card"><h2>Como a prioridade é calculada</h2>
 <ul class="lista-limpa">
 <li>Interesse: baixo 10, médio 20, alto 30 pontos.</li>
@@ -54,19 +59,19 @@
 <p>Loja Horizonte fica fora deste exemplo por não ter autorizado contato e por não corresponder ao programa e à forma de apoio da campanha.</p>
 <p>Sem histórico, o tempo é contado desde o cadastro. Um novo contato reduz a pontuação de tempo.</p></article>
 </div></section>
-    </main>
-    <footer>
-        <div class="container rodape">
-            <div>
+</main>
+<footer>
+<div class="container rodape">
+<div>
 <p><strong>SorrisoConecta</strong></p>
 <p>Conexões que viram sorrisos.</p>
 </div>
-            <div>
+<div>
 <p>Henrique dos Santos Ramalho · RM 575759 · 1TDSPA</p>
-<p>Projeto acadêmico FIAP · Sprint 1 · 2026</p>
+<p>Projeto acadêmico FIAP · Sprint 2 · 2026</p>
 <p>Proposta para a Turma do Bem. Sem vínculo oficial.</p>
 </div>
-        </div>
-    </footer>
+</div>
+</footer>
 </body>
 </html>
