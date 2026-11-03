@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SorrisoConecta: protótipo acadêmico de captação e relacionamento para a Turma do Bem.">
+    <meta name="description" content="Três campanhas fictícias do SorrisoConecta, com apoio em dinheiro, materiais e divulgação para a Turma do Bem.">
     <title>Campanhas | SorrisoConecta</title>
     <link rel="icon" href="imagens/simbolo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
@@ -11,11 +11,11 @@
 <body>
     <a class="pular" href="#conteudo">Pular para o conteúdo</a>
     <!-- O cabeçalho mantém a mesma navegação em todas as páginas. -->
-    <div class="anuncio">CADA APOIO ENCONTRA UM CAMINHO PARA FAZER O BEM</div>
+    <div class="anuncio">Cada apoio encontra um caminho para fazer o bem</div>
 <header>
         <div class="container cabecalho">
             <a class="marca" href="index.html"><img src="imagens/simbolo.svg" alt="">SorrisoConecta</a>
-            <nav aria-label="Menu principal">
+            <nav id="menu-principal" aria-label="Menu principal">
                 <a href="index.html">Início</a>
                 <a href="campanhas.html" aria-current="page">Campanhas</a>
                 <a href="radar.html">Radar</a>
@@ -34,7 +34,8 @@
 <p class="lead">Escolha uma campanha conforme seu interesse e disponibilidade. A equipe poderá orientar os próximos passos.</p>
 </div>
             <p class="aviso">As campanhas e os números abaixo são fictícios, usados para demonstrar a solução acadêmica. Não há arrecadação real.</p>
-            <div class="grid-tres">
+            <div class="filtros"><label for="filtro-campanha">Filtrar por forma de apoio</label><select id="filtro-campanha"><option value="Todas">Todas</option><option>Divulgação</option><option>Materiais</option><option>Dinheiro</option></select></div>
+            <div class="grid-tres" id="lista-campanhas">
                 <article class="card campanha"><span class="etiqueta">Divulgação</span><h2>Vozes do Bairro</h2>
 <p>Compartilhar informações aprovadas sobre o programa Dentista do Bem em estabelecimentos e canais locais.</p>
 <p><strong>São Paulo · Dentista do Bem</strong></p>

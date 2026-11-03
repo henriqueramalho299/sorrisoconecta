@@ -219,3 +219,47 @@ footer { border-top: 1px solid var(--linha); padding: 50px 0 30px; margin-top: 4
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Sprint 2: navegação, mensagens de formulário e radar responsivo. */
+[hidden] { display: none !important; }
+.menu-botao { display: none; }
+.filtros { display: flex; align-items: end; flex-wrap: wrap; gap: 20px; margin: 24px 0; }
+.filtros > div { flex: 1; min-width: 180px; }
+.filtros select { max-width: 340px; }
+.erro-campo { display: block; color: #ffb6a5; font-size: 13px; margin: 5px 0 0; }
+[aria-invalid="true"] { border: 2px solid #ff9477; }
+.tabela button { font-size: 12px; padding: 9px 13px; }
+.tabela td { overflow-wrap: anywhere; }
+.sucesso { border-color: #88bc9d; color: #b7e0c7; }
+@media (max-width: 991px) {
+ .cabecalho { flex-wrap: wrap; }
+ .menu-botao { display: inline-flex; align-items: center; gap: 14px; padding: 10px 14px; border: 1px solid #747a76; border-radius: 8px; background: var(--painel); color: var(--texto); font: inherit; cursor: pointer; }
+ html.js #menu-principal { display: none; width: 100%; }
+ html.js #menu-principal.aberto { display: flex; }
+ #menu-principal { flex-wrap: wrap; gap: 8px 20px; padding-bottom: 10px; }
+ #menu-principal a { padding: 12px 8px; }
+ .tabela { min-width: 0; }
+ .tabela-area { overflow: visible; }
+ .tabela thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+ .tabela, .tabela tbody, .tabela tr, .tabela td { display: block; width: 100%; }
+ .tabela tr { padding: 12px; border-bottom: 2px solid var(--linha); }
+ .tabela td { border: 0; padding: 9px; }
+ .tabela td::before { content: attr(data-label); display: block; color: #b7bdb4; font-size: 11px; text-transform: uppercase; margin-bottom: 4px; }
+}
+@media (max-width: 560px) {
+ .hero h1 { font-size: clamp(40px, 11vw, 50px); }
+ .orbita { margin: 18px 0; overflow: clip; overflow-clip-margin: 12px; }
+ .orbita-no { max-width: 90%; }
+ .orbita-no small { max-width: 140px; }
+ .nucleo span { font-size: 8px; letter-spacing: .5px; }
+ .orbita-legenda { right: 6%; }
+ .etapas { grid-template-columns: 1fr; }
+ .amostra-topo { flex-wrap: wrap; }
+ .forma { font-size: 16px; }
+ .filtros { align-items: stretch; flex-direction: column; }
+ .filtros select { max-width: none; }
+}
+
+/* Nesta entrega a navegação permanece visível, sem JavaScript. */
+.menu-botao { display:none !important; }
+#menu-principal { display:flex !important; }

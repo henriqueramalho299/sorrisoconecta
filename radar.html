@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SorrisoConecta: protótipo acadêmico de captação e relacionamento para a Turma do Bem.">
+    <meta name="description" content="Radar de Apoio: classificação explicável de apoiadores por interesse, compatibilidade e tempo sem contato.">
     <title>Radar de Apoio | SorrisoConecta</title>
     <link rel="icon" href="imagens/simbolo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
@@ -11,11 +11,11 @@
 <body>
     <a class="pular" href="#conteudo">Pular para o conteúdo</a>
     <!-- O cabeçalho mantém a mesma navegação em todas as páginas. -->
-    <div class="anuncio">CADA APOIO ENCONTRA UM CAMINHO PARA FAZER O BEM</div>
+    <div class="anuncio">Cada apoio encontra um caminho para fazer o bem</div>
 <header>
         <div class="container cabecalho">
             <a class="marca" href="index.html"><img src="imagens/simbolo.svg" alt="">SorrisoConecta</a>
-            <nav aria-label="Menu principal">
+            <nav id="menu-principal" aria-label="Menu principal">
                 <a href="index.html">Início</a>
                 <a href="campanhas.html">Campanhas</a>
                 <a href="radar.html" aria-current="page">Radar</a>
@@ -36,44 +36,12 @@
 <a class="botao botao-claro" href="campanhas.html">Ver campanhas</a>
 </div>
             <p class="lead">Uma lista de contatos com contexto, motivo da prioridade e uma próxima ação sugerida.</p>
-            <p class="aviso">Tela estática com dados fictícios. A ordenação real pelas regras pode ser demonstrada no programa Python.</p>
-            <div class="indicadores">
-<article class="card"><span>Apoiadores compatíveis e autorizados</span><strong>2</strong></article><article class="card"><span>Campanha selecionada</span><strong>Vozes</strong><span>Vozes do Bairro</span></article><article class="card"><span>Abordagens prioritárias</span><strong>1</strong></article>
-</div>
-            <h2>Vozes do Bairro · São Paulo · Divulgação</h2>
-            <div class="tabela-area">
-<table class="tabela">
-<caption>Exemplo de classificação no início da demonstração</caption>
-<thead><tr>
-<th scope="col">Apoiador</th>
-<th scope="col">Prioridade</th>
-<th scope="col">Motivo</th>
-<th scope="col">Próximo passo</th>
-</tr></thead>
-<tbody>
-                <tr>
-<td>
-<strong>Papelaria Ponte</strong><br>Pessoa jurídica</td>
-<td>
-<span class="pontuacao">100/100</span><br><span class="etiqueta">Prioritário</span>
-</td>
-<td>Interesse alto (+30), compatibilidade (+50) e 16 dias sem contato (+20).</td>
-<td>Avaliar convite para divulgação.<br><a href="contato.html">Abrir contato demonstrativo</a>
-</td>
-</tr>
-                <tr>
-<td>
-<strong>Marina Exemplo</strong><br>Pessoa física</td>
-<td>
-<span class="pontuacao">80/100</span><br><span class="etiqueta">Aproximação</span>
-</td>
-<td>Interesse médio (+20), compatibilidade (+50) e 9 dias sem contato (+10).</td>
-<td>Retomar a conversa sobre a campanha.<br><a href="contato.html">Abrir contato demonstrativo</a>
-</td>
-</tr>
-            </tbody>
-</table>
-        </div></section>
+            <p class="aviso">Demonstração com dados fictícios. Este é um exemplo estático de classificação. Nenhuma mensagem é enviada.</p>
+            <div class="indicadores"><article class="card"><span>Exemplos de apoiadores</span><strong>3</strong></article><article class="card"><span>Maior prioridade ilustrativa</span><strong>90</strong></article><article class="card"><span>Mensagens enviadas</span><strong>0</strong></article></div>
+            <h2 id="titulo-radar">Oportunidades de apoio</h2>
+            <div class="tabela-area"><table class="tabela"><caption>Exemplo estático de classificação para uma campanha fictícia</caption><thead><tr><th scope="col">Apoiador</th><th scope="col">Prioridade</th><th scope="col">Motivo</th><th scope="col">Próxima ação sugerida</th></tr></thead><tbody><tr><td>Instituto Aurora</td><td>90 · Prioritário</td><td>Interesse alto, compatibilidade com a campanha e contato antigo</td><td>Planejar novo contato</td></tr><tr><td>Comércio Sol</td><td>80 · Aproximação</td><td>Interesse médio e compatibilidade com a campanha</td><td>Apresentar formas de apoio</td></tr><tr><td>Ateliê Ponte</td><td>70 · Aproximação</td><td>Interesse em divulgação e histórico de contato</td><td>Confirmar disponibilidade</td></tr></tbody></table></div>
+            
+        </section>
         <section class="container"><div class="grid-dois">
 <article class="card"><h2>Como a prioridade é calculada</h2>
 <ul class="lista-limpa">
